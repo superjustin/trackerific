@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'httparty', '>= 0.12.0'
+  spec.add_dependency 'httparty', '>= 0.11.0'
   spec.add_dependency 'savon', '~> 2.3.0'
   spec.add_dependency 'activesupport'
   spec.add_dependency 'builder'
