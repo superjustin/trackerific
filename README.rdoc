@@ -48,11 +48,11 @@ Once you configured the services, tracking a package is as easy as
 === Finding a Tracking Service Provider
 
 If you do not know the tracking service provider of a package id you can use
-Trackerific::Services.find_by_tracking_id:
+Trackerific::Services.find_by_package_id:
 
-  Trackerific::Services.find_by_tracking_id("123456789012")
-  Trackerific::Services.find_by_tracking_id("1Z12345E0291980793")
-  Trackerific::Services.find_by_tracking_id("EJ958083578US")
+  Trackerific::Services.find_by_package_id("123456789012")
+  Trackerific::Services.find_by_package_id("1Z12345E0291980793")
+  Trackerific::Services.find_by_package_id("EJ958083578US")
 
 Each of the above examples will return an Array of
 Trackerific::Service::Base subclasses that are capable of tracking the given
