@@ -28,6 +28,7 @@ class Trackerific::Parsers::UPS < Trackerific::Parsers::Base
   private
 
   def track_response
+    Rails.logger.error(@response.inspect)
     @response['TrackResponse']
   end
 
