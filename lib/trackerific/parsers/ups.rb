@@ -2,6 +2,7 @@ class Trackerific::Parsers::UPS < Trackerific::Parsers::Base
   protected
 
   def response_error
+    Rails.logger.error(@response.inspect)
     @response_error ||= if @response.code != 200
       Trackerific::Error.new("HTTP returned status #{@response.code}")
     elsif response_status_code == :error
