@@ -6,6 +6,6 @@ class Trackerific::Services::FedEx < Trackerific::Services::Base
     config.builder = Trackerific::Builders::FedEx
     config.parser = Trackerific::Parsers::FedEx
     config.wsdl = 'fedex/TrackService_v8'
-    config.package_id_matchers = [ /^[0-9]{15}$/ ]
+    config.package_id_matchers = [ /^[0-9]{12}$/, /^[0-9]{15}$/ ]
   end
 end
