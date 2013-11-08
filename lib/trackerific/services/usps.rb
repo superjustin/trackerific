@@ -7,7 +7,7 @@ class Trackerific::Services::USPS < Trackerific::Services::Base
     config.package_id_matchers = [ /^E\D{1}\d{9}\D{2}$|^9\d{15,21}$/ ]
 
     case Trackerific.env
-    when 'production'
+    when 'production', 'staging'
       config.endpoint = '/ShippingAPI.dll'
       config.base_uri = 'http://production.shippingapis.com'
     else
